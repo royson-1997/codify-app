@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta content="<?php echo $this->data['description']; ?>" name="description">
     <meta content="<?php echo $this->data['keywords']; ?>" name="keywords">
+    <base href="<?php echo base_url(); ?>">
 
     <link rel="apple-touch-icon" sizes="57x57" href="asset/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="asset/favicon/apple-icon-60x60.png">
@@ -36,7 +37,7 @@
     
     <meta name="google-site-verification" content="w-Eqq5Fl-jM00fW1TJcZeOpmIyU1DOEUYX5Nx0Eyrw0" />
 
-    <link rel="canonical" href="<?php echo base_url(); ?>">
+    <link rel="canonical" href="<?php echo base_url(); ?>code-optimize">
     <meta name="robots" content="index,follow">
 
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
@@ -73,7 +74,7 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     
-    <input type="hidden" value="<?php echo base_url(); ?>" id="base_url">
+    <input type="hidden" value="<?php echo base_url(); ?>code-optimize/" id="base_url">
     <div style='display:none;position:absolute;z-index:6;top:75px;right:0;height:75px;padding-top:22px;padding-right:20px;padding-left:20px;background-color:#ffc107;' id='googleSearch'>
        <div class='gcse-search'>
          <input type="text" style="width: 500px;">
@@ -83,8 +84,8 @@
     <div class="w3-bar w3-card-2 notranslate" style="padding-left:12px;padding-right:16px;">
       <a href="<?php echo base_url(); ?>" class="w3-bar-item w3-button w3-hover-none w3-left w3-padding-16" title="Home" style="width:77px;"><img src="asset/images/final-logo.png" height="43" alt="W3Codify"></a>
       <a class="w3-bar-item w3-button w3-hide-small barex bar-item-hover w3-padding-24" href="javascript:void(0)" onclick="w3_open_nav('tutorials')" id="navbtn_tutorials" title="Tutorials" style="width:116px">Tools <i class="fas fa-chevron-down"></i><i class='fas fa-chevron-up' style="display:none"></i></a>
-      <a class="w3-bar-item w3-button w3-hide-small barex bar-item-hover w3-padding-24" href="javascript:void(0)" title="Video Tutorials">Blogs </a>
-      <a class="w3-bar-item w3-button w3-hide-small barex bar-item-hover w3-padding-24" href="javascript:void(0)" title="Video Tutorials">Contact </a>
+      <!-- <a class="w3-bar-item w3-button w3-hide-small barex bar-item-hover w3-padding-24" href="javascript:void(0)" title="Video Tutorials">Blogs </a>
+      <a class="w3-bar-item w3-button w3-hide-small barex bar-item-hover w3-padding-24" href="javascript:void(0)" title="Video Tutorials">Contact </a> -->
       <a class="w3-bar-item w3-button bar-item-hover w3-padding-24" href="javascript:void(0)" onclick="w3_open()" id="navbtn_menu" title="Menu" style="width:100px">Menu <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a>
       <div class="w3-right w3-padding-16">
         <a class="w3-bar-item w3-button bar-icon-hover w3-right" href="javascript:void(0)" style="padding-left:12px;padding-right:12px;margin-right:8px" title='Search W3Codify' id="nav_search_btn"><i class="fas fa-search"></i></a>
@@ -96,8 +97,8 @@
       <div class="w3-container w3-padding-32">
         <a class="w3-button w3-block" style="font-size:22px;" onclick="open_xs_menu('tutorials');" href="javascript:void(0);">Tools <i class='fa fa-caret-down'></i></a>
         <div id="sectionxs_tutorials" class="w3-left-align w3-show" style="background-color:#282A35;color:white;"></div>
-        <a class="w3-button w3-block" style="font-size:22px;" href="javascript:void(0)">Blogs</a>
-        <a class="w3-button w3-block" style="font-size:22px;" href="javascript:void(0)">Contact</a>
+        <!-- <a class="w3-button w3-block" style="font-size:22px;" href="javascript:void(0)">Blogs</a>
+        <a class="w3-button w3-block" style="font-size:22px;" href="javascript:void(0)">Contact</a> -->
       </div>
     </div>
     <nav id="nav_tutorials" class="w3-hide-small navex" style="position:absolute;background-color:#000000;color:white;padding-bottom:60px;">
@@ -109,13 +110,13 @@
            </div>
            <div class="w3-col l3 m6">
               <h3 class="w3-margin-top">Beautify Tools</h3>
-              <a class="w3-bar-item w3-button" target="_blank" href="<?php echo base_url(); ?>beautify-json">Beautify JSON</a>
-              <a class="w3-bar-item w3-button" target="_blank" href="<?php echo base_url(); ?>beautify-xml">Beautify XML</a>
+              <a class="w3-bar-item w3-button" target="_blank" href="<?php echo base_url(); ?>code-optimize/beautify-json">Beautify JSON</a>
+              <a class="w3-bar-item w3-button" target="_blank" href="<?php echo base_url(); ?>code-optimize/beautify-xml">Beautify XML</a>
            </div>
            <div class="w3-col l3 m6">
               <h3 class="w3-margin-top">Minify Tools</h3>
-              <a class="w3-bar-item w3-button" target="_blank" href="<?php echo base_url(); ?>minify-json">Minify JSON</a>
-              <a class="w3-bar-item w3-button" target="_blank" href="<?php echo base_url(); ?>minify-xml">Minify XML</a>
+              <a class="w3-bar-item w3-button" target="_blank" href="<?php echo base_url(); ?>code-optimize/minify-json">Minify JSON</a>
+              <a class="w3-bar-item w3-button" target="_blank" href="<?php echo base_url(); ?>code-optimize/minify-xml">Minify XML</a>
            </div>
         </div>
       </div>
@@ -144,7 +145,7 @@
               <div class="w3-code cssHigh notranslate green-border" id="bxml_sec" style="display: none;">
                 <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>?xml<span class="attributecolor" style="color:red"> version<span class="attributevaluecolor" style="color:mediumblue">="1.0"</span> encoding<span class="attributevaluecolor" style="color:mediumblue">="UTF-8"</span>?</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>note<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>to<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Tove<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/to<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>from<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Jani<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/from<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>heading<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Reminder<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/heading<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Don't forget me this weekend!<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/note<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
               </div>
-              <a href="<?php echo base_url(); ?>beautify-json" target="_blank" id="b_btn" class="w3-button tryit-button">Try it Yourself</a>
+              <a href="<?php echo base_url(); ?>code-optimize/beautify-json" target="_blank" id="b_btn" class="w3-button tryit-button">Try it Yourself</a>
             </div>
           </div>
         </div>
@@ -168,7 +169,7 @@
               <div class="w3-code cssHigh notranslate green-border" id="mxml_sec" style="display: none;">
                 <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>?xml<span class="attributecolor" style="color:red"> version<span class="attributevaluecolor" style="color:mediumblue">="1.0"</span> encoding<span class="attributevaluecolor" style="color:mediumblue">="UTF-8"</span>?</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>note<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>to<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Tove<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/to<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>from<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Jani<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/from<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>heading<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Reminder<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/heading<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Don't forget me this weekend!<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/note<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
               </div>
-              <a href="<?php echo base_url(); ?>minify-json" target="_blank" id="m_btn" class="w3-button tryit-button">Try it Yourself</a>
+              <a href="<?php echo base_url(); ?>code-optimize/minify-json" target="_blank" id="m_btn" class="w3-button tryit-button">Try it Yourself</a>
             </div>
           </div>
         </div>

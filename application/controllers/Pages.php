@@ -11,6 +11,17 @@ class Pages extends CI_Controller {
 
     public function index(){
 
+        $this->data['title'] = "Online Website and Application Designing Organization - W3Codify";
+        $this->data['description'] = "W3Codify is an organization that aimed at helping companies promote new products and business launches. Give Your customers human feeling touch Like Never Before.";
+        $this->data['keywords'] = "HTML, CSS, SQL, JavaScript, PHP, Java, C++, jQuery, Bootstrap, C#, XML, MySQL, Python, NodeJS, React, Graphics, Angular, R, AI, Git, Programming, Web Development, Learning, Lessons, Beautify, Minify, Optimization";
+
+        $this->data['subview'] = '';
+        $this->load->view('all_pages/servicePage', $this->data);
+
+    }
+
+    public function getCodeOptimizerPage(){
+
         $this->data['title'] = "W3Codify Online Code Optimization";
         $this->data['description'] = "Easy and fastest way to optimize your code and all our tools are easy to use. Experience with lots of tools like Json Beautify, XML Beautify, JSON Minify, XML Minify and many more.";
         $this->data['keywords'] = "HTML, CSS, SQL, JavaScript, PHP, Java, C++, jQuery, Bootstrap, C#, XML, MySQL, Python, NodeJS, React, Graphics, Angular, R, AI, Git, Programming, Web Development, Learning, Lessons, Beautify, Minify, Optimization";

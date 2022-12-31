@@ -49,13 +49,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-    $route['default_controller'] = 'pages';
-    $route['404_override'] = '';
-    $route['translate_uri_dashes'] = FALSE;
 
-    $route['about'] = 'pages/getAboutPage';
-    $route['contact'] = 'pages/getContactPage';
-    $route['beautify-json'] = 'pages/getJsonBeautifyPage';
-    $route['beautify-xml'] = 'pages/getXMLBeautifyPage';
-    $route['minify-json'] = 'pages/getJsonMinifyPage';
-    $route['minify-xml'] = 'pages/getXMLMinifyPage';
+$route['default_controller'] = 'pages';
+$route['404_override'] = '';
+$route['translate_uri_dashes'] = FALSE;
+
+$route['code-optimize'] = 'pages/getCodeOptimizerPage';
+$route['code-optimize/beautify-json'] = 'pages/getJsonBeautifyPage';
+$route['code-optimize/beautify-xml'] = 'pages/getXMLBeautifyPage';
+$route['code-optimize/minify-json'] = 'pages/getJsonMinifyPage';
+$route['code-optimize/minify-xml'] = 'pages/getXMLMinifyPage';
+// $route['about'] = 'pages/getAboutPage';
+// $route['contact'] = 'pages/getContactPage';

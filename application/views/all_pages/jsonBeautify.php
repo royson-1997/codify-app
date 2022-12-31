@@ -2,7 +2,7 @@
 
     <div class="w3-bar" style="overflow:auto">
 
-      <a id="tryhome" href="<?php echo base_url(); ?>" target="_blank" title="w3schools.com Home" class="w3-button w3-bar-item topnav-icons fa fa-home"></a>
+      <a id="tryhome" href="<?php echo base_url(); ?>code-optimize" target="_blank" title="w3schools.com Home" class="w3-button w3-bar-item topnav-icons fa fa-home"></a>
 
       <a href="javascript:void(0);" onclick="retheme()" title="Change Theme" class="w3-button w3-bar-item topnav-icons fa fa-adjust"></a>
 
